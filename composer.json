@@ -1,0 +1,16 @@
+{
+  "name": "muqsit/simplepackethandler",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "idk",
+  "type": "library",
+  "authors": [
+    {
+      "name": "Muqsit",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "pocketmine/pocketmine-mp": "^4.0.0"
+  }
+}
