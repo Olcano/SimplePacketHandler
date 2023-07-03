@@ -2,7 +2,6 @@
   "name": "muqsit/simplepackethandler",
   "description": "description",
   "minimum-stability": "stable",
-  "license": "idk",
   "type": "library",
   "authors": [
     {
@@ -10,7 +9,9 @@
       "email": "email@example.com"
     }
   ],
-  "require": {
-    
+  "autoload": {
+    "psr-4": {
+      "\\": "./"
+    }
   }
 }

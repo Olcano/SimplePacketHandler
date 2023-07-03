@@ -2,13 +2,13 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler;
+namespace SimplePacketHandler;
 
 use InvalidArgumentException;
-use muqsit\simplepackethandler\interceptor\IPacketInterceptor;
-use muqsit\simplepackethandler\interceptor\PacketInterceptor;
-use muqsit\simplepackethandler\monitor\IPacketMonitor;
-use muqsit\simplepackethandler\monitor\PacketMonitor;
+use SimplePacketHandler\interceptor\IPacketInterceptor;
+use SimplePacketHandler\interceptor\PacketInterceptor;
+use SimplePacketHandler\monitor\IPacketMonitor;
+use SimplePacketHandler\monitor\PacketMonitor;
 use pocketmine\event\EventPriority;
 use pocketmine\plugin\Plugin;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler\monitor;
+namespace SimplePacketHandler\monitor;
 
 use Closure;
 use pocketmine\plugin\Plugin;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler\utils;
+namespace SimplePacketHandler\utils;
 
 use Closure;
 use InvalidArgumentException;

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler\interceptor;
+namespace SimplePacketHandler\interceptor;
 
 use Closure;
 use pocketmine\network\mcpe\NetworkSession;

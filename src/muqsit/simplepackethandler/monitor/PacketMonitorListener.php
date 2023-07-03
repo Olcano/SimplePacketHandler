@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler\monitor;
+namespace SimplePacketHandler\monitor;
 
 use Closure;
-use muqsit\simplepackethandler\utils\Utils;
+use SimplePacketHandler\utils\Utils;
 use pocketmine\event\EventPriority;
 use pocketmine\event\HandlerListManager;
 use pocketmine\event\RegisteredListener;

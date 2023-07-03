@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace muqsit\simplepackethandler\interceptor;
+namespace SimplePacketHandler\interceptor;
 
 use Closure;
-use muqsit\simplepackethandler\utils\Utils;
+use SimplePacketHandler\utils\Utils;
 use pocketmine\event\HandlerListManager;
 use pocketmine\event\RegisteredListener;
 use pocketmine\event\server\DataPacketReceiveEvent;
