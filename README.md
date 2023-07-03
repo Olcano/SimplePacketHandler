@@ -1,12 +1,16 @@
 # SimplePacketHandler
+
 Put an end to the if-elseif instanceof hell.
 
 ## API Documentation
+
 ### Packet Monitor
+
 Monitor data packets - use this if you aren't modifying the outcome of the event.<br>
 Packet monitor registers DataPacket(Receive/Send)Event(s) at `MONITOR` priority.
 
 Use case:
+
 - Dumping extra data from packets
 - Debugging whether a packet was sent / received
 
@@ -28,6 +32,7 @@ $packet_monitor->monitorOutgoing(function(SetActorDataPacket $packet, NetworkSes
 ```
 
 The `LoginPacket` example above is the equivalent of:
+
 ```php
 /**
  * @param DataPacketReceiveEvent $event
@@ -43,6 +48,7 @@ public function onDataPacketReceive(DataPacketReceiveEvent $event) : void{
 ```
 
 The `SetActorDataPacket` example above is the equivalent of:
+
 ```php
 /**
  * @param DataPacketSendEvent $event
@@ -60,9 +66,11 @@ public function onDataPacketSend(DataPacketSendEvent $event) : void{
 ```
 
 ### Packet Interceptor
+
 Handle data packets - DataPacket(Receive/Send)Event(s) are registered at < `MONITOR` priority.
 
 Use case:
+
 - Blocking pocketmine from handling specific data packets
 - Modifying data packets before pocketmine handles them
 
@@ -88,6 +96,7 @@ $packet_interceptor->interceptOutgoing(function(SetTimePacket $packet, NetworkSe
 ```
 
 The `AdventureSettingsPacket` example above is the equivalent of:
+
 ```php
 /**
  * @param DataPacketReceiveEvent $event
@@ -105,6 +114,7 @@ public function onDataPacketReceive(DataPacketReceiveEvent $event) : void{
 ```
 
 The `SetTimePacket` example above is the equivalent of:
+
 ```php
 /**
  * @param DataPacketSendEvent $event
