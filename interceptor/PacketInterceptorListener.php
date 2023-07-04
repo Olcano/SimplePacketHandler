@@ -104,7 +104,11 @@ final class PacketInterceptorListener implements IPacketInterceptor
                                 }
                             }
 
-                            Server::getInstance()->getPacketBroadcaster(Server::getInstance()->getPacketSerializerContext(new TypeConverter(ProtocolInfo::CURRENT_PROTOCOL)))->broadcastPackets($new_target_players, $packets);
+                            foreach ($new_target_players as $player) {
+                                foreach ($packets as $packet) {
+                                    $player->getNetworkSession()->sendDataPacket($packet);
+                                }
+                            }
                         }
                         break;
                     }
